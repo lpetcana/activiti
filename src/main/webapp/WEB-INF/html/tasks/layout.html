@@ -1,0 +1,28 @@
+
+<table class="table table-bordered table-striped" style="width:450px; margin-left: 100px;" ng-show="tasks.length > 0">
+    <thead>
+    <tr>
+        <th style="text-align: center; width: 25px;">Task Id</th>
+        <th style="text-align: center;">Task Name</th>
+        <th style="text-align: center;">Asignee</th>
+        <th style="text-align: center;">Category</th>
+        <th style="text-align: center;">ExecutionId</th>
+        <th style="text-align: center;">Description</th>
+        <th style="text-align: center;">DefinitionKey</th>
+        <th style="text-align: center;">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="task in tasks">
+        <td>{{task.id}}</td>
+        <td>{{task.name}}</td>
+        <td>{{task.asignee}}</td>
+        <td>{{task.category}}</td>
+        <td>{{task.executionId}}</td>
+        <td>{{task.description}}</td>
+        <td>{{task.definitionKey}}</td>
+        <td><button class="btn btn-mini btn-success" ng-click="changeView(task)">Perform Action</button></td>
+    </tr>
+    </tbody>
+</table>
+

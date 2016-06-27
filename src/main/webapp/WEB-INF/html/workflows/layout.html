@@ -1,0 +1,20 @@
+<table class="table table-bordered table-striped" style="width:450px; margin-left: 100px;" ng-show="wfs.length > 0">
+    <thead>
+    <tr>
+        <th style="text-align: center; width: 25px;">Process Id</th>
+        <th style="text-align: center;">Process Definition Entity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="wf in wfs">
+        <td>{{wf.id}}</td>
+        <td>{{wf.name}}</td>
+    </tr>
+    </tbody>
+</table>
+
+<button class="btn btn-mini btn-danger" ng-click="doAction()">Remove Universe</button>
+
+<div class="row">
+    xxx
+</div>
